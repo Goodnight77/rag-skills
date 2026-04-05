@@ -19,6 +19,7 @@ Use these when the main problem is how to split source material into retrievable
 - [Semantic Chunking](skills/chunking/semantic-chunking.md) - Chunk documents based on semantic boundaries
 - [Hierarchical Chunking](skills/chunking/hierarchical-chunking.md) - Multi-level chunking for nested structures
 - [Sliding Window Chunking](skills/chunking/sliding-window-chunking.md) - Overlap-based chunking for context preservation
+- [Contextual Chunk Headers](skills/chunking/contextual-chunk-headers.md) - Adding higher-level context to chunks
 
 ### Vector Databases
 Use these when the main problem is choosing or operating the storage layer for embeddings and metadata.
@@ -30,6 +31,16 @@ Use these when the main problem is choosing or operating the storage layer for e
 Use these when the main problem is search quality, ranking, recall, or combining search methods.
 - [Hybrid Search BM25 Dense](skills/retrieval-strategies/hybrid-search-bm25-dense.md) - Combining keyword and semantic search
 - [Multi-Pass Retrieval with Reranking](skills/retrieval-strategies/multi-pass-retrieval-with-reranking.md) - Two-pass retrieval with cross-encoder reranking
+- [Query Transformation Strategies](skills/retrieval-strategies/query-transformation-strategies.md) - Query rewriting, step-back prompting, sub-query decomposition
+- [HyDE - Hypothetical Document Embeddings](skills/retrieval-strategies/hyde-hypothetical-document-embeddings.md) - Query expansion with LLM-generated documents
+- [HyPE - Hypothetical Prompt Embeddings](skills/retrieval-strategies/hype-hypothetical-prompt-embeddings.md) - Precomputed question embeddings at indexing time
+- [Self-RAG](skills/retrieval-strategies/self-rag.md) - Self-reflective retrieval with relevance evaluation
+- [RAPTOR - Hierarchical Retrieval](skills/retrieval-strategies/raptor-hierarchical-retrieval.md) - Multi-level tree of document summaries
+- [Context Enrichment Window](skills/retrieval-strategies/context-enrichment-window.md) - Adding surrounding chunks to retrieved results
+- [Adaptive Retrieval](skills/retrieval-strategies/adaptive-retrieval.md) - Dynamic strategy selection based on query type
+- [Explainable Retrieval with Citations](skills/retrieval-strategies/explainable-retrieval.md) - Traceability and source attribution
+- [CRAG - Corrective RAG](skills/retrieval-strategies/crag-corrective-rag.md) - Dynamic correction with web search
+- [Graph RAG](skills/retrieval-strategies/graph-rag.md) - Knowledge graph-based retrieval
 
 ### Data Type Handling
 Use these when the source content is code, APIs, diagrams, tables, or mixed media.
@@ -98,7 +109,7 @@ Each skill follows a consistent structure with a short illustrative snippet, not
 This is an active open-source project. Skills are continuously added and updated as RAG best practices evolve.
 
 Current statistics:
-- **Total Skills**: 11
+- **Total Skills**: 21
 - **Categories**: 7
 - **Examples**: 3
 
