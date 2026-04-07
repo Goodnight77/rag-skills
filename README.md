@@ -10,6 +10,27 @@ A modular collection of best-practice guides and skill definitions for building 
 
 RAG-skills consolidates actionable skills that help AI agents and builders improve RAG performance, choose appropriate vector databases, implement effective chunking strategies, optimize retrieval quality, and orchestrate multi-step RAG workflows.
 
+## Installation
+
+### Via Claude Code Plugin
+
+Add the marketplace and install all RAG skills:
+
+```bash
+/plugin marketplace add Goodnight77/rag-skills
+/plugin install Goodnight77@rag-skills
+```
+
+### Via npx skills CLI
+
+```bash
+npx skills add Goodnight77/rag-skills
+```
+
+### Manual Usage
+
+Clone or fork the repository and reference skill files directly in your agent workflows.
+
 ## Skills by Decision Area
 
 This repo is organized as a routing layer for RAG work. Agents can use the category and metadata in each skill file to decide which path to follow for a given problem, instead of treating the repo like a generic reference manual.
