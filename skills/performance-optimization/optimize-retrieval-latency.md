@@ -7,7 +7,7 @@ allowed-tools:
   - Glob
   - Bash
 category: "performance-optimization"
-tags": ["latency", "performance", "caching", "indexing", "optimization"]
+tags: ["latency", "performance", "caching", "indexing", "optimization"]
 ---
 
 ## Overview
