@@ -1,0 +1,14 @@
+{
+  "name": "rag-skills",
+  "owner": {
+    "name": "Mohamed Arbi ",
+    "url": "https://github.com/Goodnight77"
+  },
+  "plugins": [
+    {
+      "name": "rag-skills",
+      "source": "./",
+      "description": "Agent skills for RAG: chunking strategies, retrieval methods, vector databases, and performance optimization"
+    }
+  ]
+}

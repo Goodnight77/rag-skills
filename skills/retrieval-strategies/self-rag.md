@@ -79,7 +79,7 @@ Combine all components into a cohesive reflective system.
 
 Chain together the retrieval decision, relevance evaluation, response generation, and assessment steps into a unified workflow.
 
-For implementation patterns, see the [Self-RAG paper](https://arxiv.org/abs/2310.11511), [LangChain self-RAG example](https://python.langchain.com/docs/tutorials/rag/self_rag), and [LlamaIndex self-RAG guide](https://docs.llamaindex.ai/en/stable/examples/query_transformations/query_transform_cookbook.html).
+For implementation patterns, see the [Self-RAG paper](https://arxiv.org/abs/2310.11511), [LangGraph agentic RAG guide](https://docs.langchain.com/oss/python/langgraph/agentic-rag), and [LlamaIndex SelfRAG pack](https://docs.llamaindex.ai/en/stable/api_reference/packs/self_rag/).
 
 ## When to Use This Skill
 - Building RAG systems where response accuracy is critical

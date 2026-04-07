@@ -49,7 +49,7 @@ Retrieve chunks with optional parent context.
 
 **Why**: Hierarchical retrieval allows users to "zoom in" from broad topics to specific details, just like browsing a table of contents.
 
-For implementation details, see the [LlamaIndex hierarchical node parser](https://docs.llamaindex.ai/en/stable/api_reference/node_parsers/hierarchical/), [LangChain RecursiveCharacterTextSplitter](https://reference.langchain.com/python/langchain-text-splitters/character/RecursiveCharacterTextSplitter), [Haystack PreProcessor for structured documents](https://docs.haystack.deepset.ai/reference/experimental-preprocessors-api), and [LlamaIndex Structured Hierarchical Retrieval](https://developers.llamaindex.ai/python/examples/query_engine/multi_doc_auto_retrieval/multi_doc_auto_retrieval/).
+For implementation details, see the [LlamaIndex HierarchicalNodeParser](https://docs.llamaindex.ai/en/stable/api_reference/node_parsers/hierarchical/), [LangChain RecursiveCharacterTextSplitter](https://reference.langchain.com/python/langchain-text-splitters/character/RecursiveCharacterTextSplitter), [Haystack HierarchicalDocumentSplitter](https://docs.haystack.deepset.ai/docs/hierarchicaldocumentsplitter), and [LlamaIndex Recursive Retriever + Node References](https://developers.llamaindex.ai/python/framework/integrations/retrievers/recursive_retriever_nodes/).
 
 ## When to Use This Skill
 - Long-form documents with clear structure (books, technical documentation, research papers)

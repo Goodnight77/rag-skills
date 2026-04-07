@@ -53,7 +53,7 @@ Combine all components into a single interface.
 
 **Why**: A unified interface simplifies usage and allows easy experimentation with different fusion strategies and weights.
 
-For implementation patterns, compare [OpenSearch hybrid search docs](https://docs.opensearch.org/docs/3.0/vector-search/ai-search/hybrid-search/index/), [OpenSearch hybrid search guide](https://docs.opensearch.org/2.17/search-plugins/hybrid-search/), the [reciprocal rank fusion paper](https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf), and [Sentence Transformers retrieve & re-rank](https://sbert.net/examples/sentence_transformer/applications/retrieve_rerank/).
+For implementation patterns, compare [OpenSearch hybrid search docs](https://docs.opensearch.org/latest/vector-search/ai-search/hybrid-search/index/), [OpenSearch score ranker processor](https://docs.opensearch.org/3.0/search-plugins/search-pipelines/score-ranker-processor/), the [reciprocal rank fusion paper](https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf), and [Sentence Transformers retrieve & re-rank](https://www.sbert.net/examples/applications/retrieve_rerank/README.html).
 
 ## When to Use This Skill
 - Building production RAG systems where both precision and recall matter

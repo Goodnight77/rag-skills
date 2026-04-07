@@ -64,7 +64,7 @@ Combine results from different query transformations using scoring and deduplica
 
 Use reciprocal rank fusion (RRF) or weighted scoring to combine results from different query variants.
 
-For implementation patterns, see [LangChain query transformations](https://python.langchain.com/docs/tutorials/agents/query_routing/), [LlamaIndex query transformations](https://docs.llamaindex.ai/en/stable/examples/query_transformations/query_transform_gen.html), and the [Step-back prompting paper](https://arxiv.org/abs/2310.06117).
+For implementation patterns, see [LangChain routing workflows](https://docs.langchain.com/oss/python/langgraph/workflows-agents), [LlamaIndex Query Transform Cookbook](https://docs.llamaindex.ai/en/stable/examples/query_transformations/query_transform_cookbook/), and the [Step-back prompting paper](https://arxiv.org/abs/2310.06117).
 
 ## When to Use This Skill
 - Building RAG systems where query ambiguity is common

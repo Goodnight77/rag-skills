@@ -77,7 +77,7 @@ Combine all components into a cohesive system.
 
 **Why**: A complete pipeline with timing and explanation allows optimization, debugging, and production deployment.
 
-For implementation patterns, see the [RAPTOR paper](https://arxiv.org/abs/2401.18059), [LlamaIndex RAPTOR guide](https://docs.llamaindex.ai/en/stable/examples/query_transformations/query_transform_cookbook.html), and [scikit-learn clustering documentation](https://scikit-learn.org/stable/modules/clustering.html).
+For implementation patterns, see the [RAPTOR paper](https://arxiv.org/abs/2401.18059), [LlamaIndex RAPTOR pack](https://docs.llamaindex.ai/en/stable/api_reference/packs/raptor/), and [scikit-learn clustering documentation](https://scikit-learn.org/stable/modules/clustering.html).
 
 ## When to Use This Skill
 - Building RAG systems with large document collections (100+ documents)

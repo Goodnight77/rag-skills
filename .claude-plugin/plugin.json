@@ -1,0 +1,8 @@
+{
+  "name": "rag-skills",
+  "description": "Agent skills for RAG (Retrieval Augmented Generation): chunking strategies (sliding window, semantic, hierarchical), retrieval strategies (HyDE, CRAG, Self-RAG, Graph RAG, adaptive, multi-pass), vector database setup (Qdrant), data type handling (code, multimodal), and performance optimization",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mohamed Arbi"
+  }
+}

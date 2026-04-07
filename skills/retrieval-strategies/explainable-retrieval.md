@@ -77,7 +77,7 @@ Combine all components into a cohesive system.
 
 **Why**: A complete pipeline ensures that every aspect of the response—from claims to citations to confidence scores—is properly tracked and displayed.
 
-For implementation patterns, see [LlamaIndex citation node postprocessor](https://docs.llamaindex.ai/en/stable/examples/node_postprocessor/CitationNodePostprocessorDemo.html), the [Attributed Quote Generation paper](https://arxiv.org/abs/2211.10592), and [LangChain citation handling](https://python.langchain.com/docs/tutorials/agents/query_routing/).
+For implementation patterns, see [LlamaIndex node postprocessors](https://docs.llamaindex.ai/en/stable/module_guides/querying/node_postprocessors/), the [Attributed Quote Generation paper](https://arxiv.org/abs/2211.10592), and the [LangChain RAG guide](https://docs.langchain.com/oss/python/langchain/rag).
 
 ## When to Use This Skill
 - Building RAG systems for research, legal, or medical applications

@@ -1,0 +1,22 @@
+{
+  "name": "rag-skills",
+  "version": "1.0.0",
+  "description": "Agent skills for RAG: chunking strategies, retrieval methods, vector databases, and performance optimization",
+  "author": "Mohamed Arbi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Goodnight77/Rag-skills"
+  },
+  "skills": {
+    "directory": "./skills"
+  },
+  "keywords": [
+    "rag",
+    "retrieval-augmented-generation",
+    "vector-search",
+    "chunking",
+    "llm",
+    "skills"
+  ],
+  "license": "MIT"
+}

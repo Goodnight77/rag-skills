@@ -49,7 +49,7 @@ Adjust chunk sizes based on content characteristics (code blocks, lists, tables)
 
 **Why**: Different content types need different chunking strategies for optimal retrieval.
 
-For practical implementations, compare [Sentence-BERT](https://arxiv.org/abs/1908.10084), [LlamaIndex semantic chunking](https://docs.llamaindex.ai/en/stable/api_reference/packs/node_parser_semantic_chunking/), [LangChain RecursiveCharacterTextSplitter](https://api.python.langchain.com/en/latest/text_splitters/character/langchain_text_splitters.character.RecursiveCharacterTextSplitter.html), and [spaCy sentence segmentation](https://spacy.io/usage/linguistic-features#sentence-segmentation).
+For practical implementations, compare [Sentence-BERT](https://arxiv.org/abs/1908.10084), [LlamaIndex Semantic Chunker](https://docs.llamaindex.ai/en/stable/examples/node_parsers/semantic_chunking/), [LangChain RecursiveCharacterTextSplitter](https://docs.langchain.com/oss/python/integrations/splitters/recursive_text_splitter), and [spaCy sentence segmentation](https://spacy.io/usage/linguistic-features#sentence-segmentation).
 
 ## When to Use This Skill
 - Documents with clear semantic structure (articles, reports, documentation)

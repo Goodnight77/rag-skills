@@ -62,7 +62,7 @@ Combine generation, retrieval, and filtering into a cohesive system.
 
 **Why**: A complete pipeline with timing and explanation allows optimization, debugging, and production deployment.
 
-For implementation patterns, see the [HyDE paper](https://arxiv.org/abs/2212.10596), [LlamaIndex HyDE guide](https://docs.llamaindex.ai/en/stable/examples/query_transformations/hyde.html), and [LangChain HyDE retriever](https://python.langchain.com/docs/tutorials/query_analysis/hyde/).
+For implementation patterns, see the [HyDE paper](https://arxiv.org/abs/2212.10596), [LlamaIndex HyDE Query Transform](https://docs.llamaindex.ai/en/stable/examples/query_transformations/HyDEQueryTransformDemo/), and [LangChain HyDE reference](https://reference.langchain.com/python/langchain-classic/chains/hyde).
 
 ## When to Use This Skill
 - Building RAG systems where queries are short and documents are long
