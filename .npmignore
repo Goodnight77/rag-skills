@@ -1,0 +1,17 @@
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Docs not needed in package
+techs.md
+AGENTS.md
+.npmrc
+# Node (if added later)
+node_modules/
+package-lock.json

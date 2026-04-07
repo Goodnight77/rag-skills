@@ -5,7 +5,7 @@
   "author": "Mohamed Arbi",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Goodnight77/Rag-skills"
+    "url": "git+https://github.com/Goodnight77/Rag-skills.git"
   },
   "skills": {
     "directory": "./skills"

@@ -12,19 +12,22 @@ RAG-skills consolidates actionable skills that help AI agents and builders impro
 
 ## Installation
 
-### Via Claude Code Plugin
-
-Add the marketplace and install all RAG skills:
-
-```bash
-/plugin marketplace add Goodnight77/rag-skills
-/plugin install Goodnight77@rag-skills
-```
-
 ### Via npx skills CLI
 
 ```bash
-npx skills add Goodnight77/rag-skills
+npx skills add rag-skills
+```
+
+### Via Claude Code (Local)
+
+Clone and use as a plugin:
+
+```bash
+# Clone to your plugins directory
+git clone https://github.com/Goodnight77/Rag-skills.git ~/.claude/plugins/rag-skills
+
+# Or use from current directory
+claude --plugin-dir .
 ```
 
 ### Manual Usage
