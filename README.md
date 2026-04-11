@@ -12,27 +12,44 @@ RAG-skills consolidates actionable skills that help AI agents and builders impro
 
 ## Installation
 
-### Via npx skills CLI
+### Claude Code
 
-```bash
-npx skills add rag-skills
+Add this repository as a Claude Code plugin marketplace:
+
+```text
+/plugin marketplace add Goodnight77/rag-skills
 ```
 
-### Via Claude Code (Local)
+Then install the RAG skills plugin:
 
-Clone and use as a plugin:
+```text
+/plugin install rag-skills@rag-skills
+```
+
+Restart Claude Code after installation.
+
+### Skills CLI
+
+Install with the Skills CLI:
 
 ```bash
-# Clone to your plugins directory
-git clone https://github.com/Goodnight77/Rag-skills.git ~/.claude/plugins/rag-skills
-
-# Or use from current directory
-claude --plugin-dir .
+npx skills add Goodnight77/rag-skills
 ```
+
+This installs the root [`SKILL.md`](SKILL.md), which acts as a routing skill for
+the full RAG guide library under [`skills/`](skills/).
 
 ### Manual Usage
 
-Clone or fork the repository and reference skill files directly in your agent workflows.
+You can also clone the repository and reference the Markdown skills directly:
+
+```bash
+git clone https://github.com/Goodnight77/rag-skills.git
+```
+
+Then point your agent or coding assistant to the `skills/` directory.
+
+> Note: The repository is organized as Markdown skill guides under category folders. Claude Code plugin installation uses the included `.claude-plugin` metadata, while manual agent workflows can read the files directly from `skills/`.
 
 ## Skills by Decision Area
 
