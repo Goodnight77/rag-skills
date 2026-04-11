@@ -1,6 +1,6 @@
 {
   "name": "rag-skills",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Agent skills for RAG: chunking strategies, retrieval methods, vector databases, and performance optimization",
   "author": "Mohamed Arbi",
   "repository": {
