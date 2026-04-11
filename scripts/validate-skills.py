@@ -44,8 +44,11 @@ def get_body(content: str) -> str:
 
 def get_category(path: Path) -> str:
     """Extract category from directory structure."""
-    parts = path.relative_to(path.parent.parent).parts
-    return parts[0] if parts else ""
+    parts = path.parts
+    if "skills" not in parts:
+        return ""
+    idx = parts.index("skills")
+    return parts[idx + 1] if idx + 1 < len(parts) else ""
 
 
 def validate_skill(path: Path) -> list[str]:
@@ -173,7 +176,7 @@ def main():
         print(f"error: skills directory not found at {skills_dir}")
         sys.exit(1)
 
-    skill_files = sorted(skills_dir.rglob("*.md"))
+    skill_files = sorted(skills_dir.rglob("SKILL.md"))
     total_errors = 0
     total_warns = 0
     total_pass = 0

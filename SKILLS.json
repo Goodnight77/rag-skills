@@ -1,0 +1,442 @@
+{
+  "generated": "2026-04-11T03:11:54.579913",
+  "total_skills": 28,
+  "categories": {
+    "chunking": 6,
+    "data-type-handling": 3,
+    "performance-optimization": 2,
+    "retrieval-strategies": 13,
+    "vector-databases": 4
+  },
+  "skills": [
+    {
+      "id": "choosing-a-chunking-framework",
+      "title": "Choosing a Chunking Framework",
+      "category": "chunking",
+      "tags": [
+        "framework-selection",
+        "chonkie",
+        "langchain",
+        "llamaindex",
+        "haystack",
+        "unstructured"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Chunking quality depends as much on the framework as on the strategy itself.",
+      "path": "skills/chunking/choosing-a-chunking-framework/SKILL.md"
+    },
+    {
+      "id": "contextual-chunk-headers",
+      "title": "Contextual Chunk Headers",
+      "category": "chunking",
+      "tags": [
+        "contextual-headers",
+        "metadata",
+        "chunk-enhancement",
+        "document-structure"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Contextual chunk headers (CCH) enhance retrieval by prepending higher-level context (document title, section headers, summaries) to each chunk before embedding.",
+      "path": "skills/chunking/contextual-chunk-headers/SKILL.md"
+    },
+    {
+      "id": "hierarchical-chunking",
+      "title": "Hierarchical Chunking",
+      "category": "chunking",
+      "tags": [
+        "nested",
+        "multi-level",
+        "document-structure",
+        "parent-child"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Hierarchical chunking creates multi-level chunk structures that preserve document hierarchies (chapters, sections, subsections).",
+      "path": "skills/chunking/hierarchical-chunking/SKILL.md"
+    },
+    {
+      "id": "semantic-chunking",
+      "title": "Semantic Chunking",
+      "category": "chunking",
+      "tags": [
+        "semantic",
+        "nlp",
+        "sentence-boundary",
+        "context-preservation"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Semantic chunking divides documents into segments based on natural language boundaries and semantic meaning rather than fixed character counts.",
+      "path": "skills/chunking/semantic-chunking/SKILL.md"
+    },
+    {
+      "id": "chunking",
+      "title": "Chunking",
+      "category": "chunking",
+      "tags": [
+        "chunking",
+        "routing",
+        "rag",
+        "preprocessing"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Use this parent skill when the main RAG problem is how to split source material into retrievable units.",
+      "path": "skills/chunking/SKILL.md"
+    },
+    {
+      "id": "sliding-window-chunking",
+      "title": "Sliding Window Chunking",
+      "category": "chunking",
+      "tags": [
+        "overlap",
+        "context-preservation",
+        "window",
+        "boundary"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Sliding window chunking creates overlapping chunks where each chunk shares content with adjacent chunks.",
+      "path": "skills/chunking/sliding-window-chunking/SKILL.md"
+    },
+    {
+      "id": "rag-for-code-documentation",
+      "title": "RAG for Code Documentation",
+      "category": "data-type-handling",
+      "tags": [
+        "code",
+        "programming",
+        "syntax",
+        "api",
+        "documentation"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "RAG for code documentation requires specialized handling due to code's structured nature, syntax-specific patterns, and the importance of preserving function signatures, imports, and contextual relationships.",
+      "path": "skills/data-type-handling/rag-for-code-documentation/SKILL.md"
+    },
+    {
+      "id": "rag-for-multimodal-content",
+      "title": "RAG for Multimodal Content",
+      "category": "data-type-handling",
+      "tags": [
+        "multimodal",
+        "images",
+        "text",
+        "vision",
+        "clip"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Multimodal RAG extends retrieval to include images, videos, audio, and mixed media content alongside text.",
+      "path": "skills/data-type-handling/rag-for-multimodal-content/SKILL.md"
+    },
+    {
+      "id": "data-type-handling",
+      "title": "Data Type Handling",
+      "category": "data-type-handling",
+      "tags": [
+        "data-types",
+        "code",
+        "multimodal",
+        "rag"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Use this parent skill when source material is not plain prose or when different data types need different parsing, metadata, chunking, and retrieval strategies.",
+      "path": "skills/data-type-handling/SKILL.md"
+    },
+    {
+      "id": "optimize-retrieval-latency",
+      "title": "Optimize Retrieval Latency",
+      "category": "performance-optimization",
+      "tags": [
+        "latency",
+        "performance",
+        "caching",
+        "indexing",
+        "optimization"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Optimizing RAG retrieval latency is critical for production applications where user experience depends on fast response times.",
+      "path": "skills/performance-optimization/optimize-retrieval-latency/SKILL.md"
+    },
+    {
+      "id": "performance-optimization",
+      "title": "Performance Optimization",
+      "category": "performance-optimization",
+      "tags": [
+        "latency",
+        "performance",
+        "caching",
+        "rag"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Use this parent skill when the RAG system works functionally but is too slow, expensive, or unstable under expected traffic.",
+      "path": "skills/performance-optimization/SKILL.md"
+    },
+    {
+      "id": "adaptive-retrieval",
+      "title": "Adaptive Retrieval",
+      "category": "retrieval-strategies",
+      "tags": [
+        "adaptive",
+        "query-classification",
+        "dynamic-strategy",
+        "multi-strategy"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Adaptive retrieval classifies queries into types (factual, analytical, opinion, contextual) and applies different retrieval strategies optimized for each type.",
+      "path": "skills/retrieval-strategies/adaptive-retrieval/SKILL.md"
+    },
+    {
+      "id": "context-enrichment-window",
+      "title": "Context Enrichment Window",
+      "category": "retrieval-strategies",
+      "tags": [
+        "context-enrichment",
+        "surrounding-context",
+        "window",
+        "coherence"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Context enrichment window expands retrieved chunks by including neighboring text from the original document.",
+      "path": "skills/retrieval-strategies/context-enrichment-window/SKILL.md"
+    },
+    {
+      "id": "crag-corrective-rag",
+      "title": "CRAG - Corrective RAG",
+      "category": "retrieval-strategies",
+      "tags": [
+        "crag",
+        "corrective",
+        "web-search",
+        "relevance-evaluation",
+        "dynamic-correction"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Corrective RAG (CRAG) extends standard retrieval by dynamically evaluating document relevance and correcting the retrieval process when needed.",
+      "path": "skills/retrieval-strategies/crag-corrective-rag/SKILL.md"
+    },
+    {
+      "id": "explainable-retrieval",
+      "title": "Explainable Retrieval with Citations",
+      "category": "retrieval-strategies",
+      "tags": [
+        "explainability",
+        "citations",
+        "traceability",
+        "source-attribution"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Explainable retrieval adds citations, source attribution, and traceability to RAG systems.",
+      "path": "skills/retrieval-strategies/explainable-retrieval/SKILL.md"
+    },
+    {
+      "id": "graph-rag",
+      "title": "Graph RAG - Knowledge Graph Retrieval",
+      "category": "retrieval-strategies",
+      "tags": [
+        "graph-rag",
+        "knowledge-graph",
+        "entity-extraction",
+        "community-detection"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Graph RAG enhances traditional retrieval by constructing knowledge graphs from documents, identifying communities of related entities, and using these structures to improve retrieval.",
+      "path": "skills/retrieval-strategies/graph-rag/SKILL.md"
+    },
+    {
+      "id": "hybrid-search-bm25-dense",
+      "title": "Hybrid Search: BM25 + Dense",
+      "category": "retrieval-strategies",
+      "tags": [
+        "hybrid",
+        "bm25",
+        "dense",
+        "fusion",
+        "keyword"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Hybrid search combines BM25 (keyword search) with dense vector embeddings (semantic search) to leverage both exact term matching and semantic understanding.",
+      "path": "skills/retrieval-strategies/hybrid-search-bm25-dense/SKILL.md"
+    },
+    {
+      "id": "hyde-hypothetical-document-embeddings",
+      "title": "HyDE - Hypothetical Document Embeddings",
+      "category": "retrieval-strategies",
+      "tags": [
+        "hyde",
+        "query-expansion",
+        "llm-generation",
+        "semantic-gap"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "HyDE (Hypothetical Document Embeddings) is a query expansion technique that generates a hypothetical document answering the user's query, then uses this synthetic document as the query for vector search.",
+      "path": "skills/retrieval-strategies/hyde-hypothetical-document-embeddings/SKILL.md"
+    },
+    {
+      "id": "hype-hypothetical-prompt-embeddings",
+      "title": "HyPE - Hypothetical Prompt Embeddings",
+      "category": "retrieval-strategies",
+      "tags": [
+        "hype",
+        "precomputed-queries",
+        "indexing-time",
+        "query-alignment"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "HyPE (Hypothetical Prompt Embeddings) transforms retrieval from query-document matching to question-question matching by generating multiple hypothetical questions for each document chunk during the indexing phase.",
+      "path": "skills/retrieval-strategies/hype-hypothetical-prompt-embeddings/SKILL.md"
+    },
+    {
+      "id": "multi-pass-retrieval-with-reranking",
+      "title": "Multi-Pass Retrieval with Reranking",
+      "category": "retrieval-strategies",
+      "tags": [
+        "reranking",
+        "cross-encoder",
+        "two-stage",
+        "relevance"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Multi-pass retrieval with reranking is a two-stage approach that first retrieves a broad set of candidates using fast bi-encoder search, then refines them using a more accurate but slower cross-encoder reranker.",
+      "path": "skills/retrieval-strategies/multi-pass-retrieval-with-reranking/SKILL.md"
+    },
+    {
+      "id": "query-transformation-strategies",
+      "title": "Query Transformation Strategies",
+      "category": "retrieval-strategies",
+      "tags": [
+        "query-expansion",
+        "step-back",
+        "sub-query",
+        "query-rewriting"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Query transformation strategies modify or expand user queries before retrieval to bridge the gap between natural language queries and document representations.",
+      "path": "skills/retrieval-strategies/query-transformation-strategies/SKILL.md"
+    },
+    {
+      "id": "raptor-hierarchical-retrieval",
+      "title": "RAPTOR - Hierarchical Abstractive Retrieval",
+      "category": "retrieval-strategies",
+      "tags": [
+        "raptor",
+        "hierarchical",
+        "clustering",
+        "summarization",
+        "tree-structure"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "RAPTOR (Recursive Abstractive Processing and Tree-Organized Retrieval) creates a hierarchical tree of document summaries, allowing retrieval at multiple levels of abstraction.",
+      "path": "skills/retrieval-strategies/raptor-hierarchical-retrieval/SKILL.md"
+    },
+    {
+      "id": "self-rag",
+      "title": "Self-RAG - Self-Reflective Retrieval",
+      "category": "retrieval-strategies",
+      "tags": [
+        "self-rag",
+        "reflection",
+        "retrieval-decision",
+        "relevance-evaluation"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Self-RAG is a reflective framework that decides whether to retrieve information, evaluates the relevance of retrieved documents, assesses response support, and rates output utility.",
+      "path": "skills/retrieval-strategies/self-rag/SKILL.md"
+    },
+    {
+      "id": "retrieval-strategies",
+      "title": "Retrieval Strategies",
+      "category": "retrieval-strategies",
+      "tags": [
+        "retrieval",
+        "ranking",
+        "hybrid-search",
+        "rag"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Use this parent skill when the main RAG problem is search quality, ranking, recall, context selection, or evidence traceability.",
+      "path": "skills/retrieval-strategies/SKILL.md"
+    },
+    {
+      "id": "choosing-vector-db-by-datatype",
+      "title": "Choosing Vector Database by Data Type",
+      "category": "vector-databases",
+      "tags": [
+        "selection",
+        "text",
+        "multimodal",
+        "code",
+        "comparison"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Selecting the right vector database depends heavily on your data type (text, images, code, multimodal) and use case requirements.",
+      "path": "skills/vector-databases/choosing-vector-db-by-datatype/SKILL.md"
+    },
+    {
+      "id": "qdrant-for-production-rag",
+      "title": "Qdrant for Production RAG",
+      "category": "vector-databases",
+      "tags": [
+        "production",
+        "scaling",
+        "optimization",
+        "deployment"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Productionizing a RAG system with Qdrant requires considerations beyond basic setup: horizontal scaling, high availability, performance optimization, monitoring, and cost management.",
+      "path": "skills/vector-databases/qdrant-for-production-rag/SKILL.md"
+    },
+    {
+      "id": "qdrant-setup-rag",
+      "title": "Qdrant Setup for RAG",
+      "category": "vector-databases",
+      "tags": [
+        "qdrant",
+        "setup",
+        "ingestion",
+        "filtering"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Qdrant is an open-source vector similarity search engine designed for high-performance RAG applications.",
+      "path": "skills/vector-databases/qdrant-setup-rag/SKILL.md"
+    },
+    {
+      "id": "vector-databases",
+      "title": "Vector Databases",
+      "category": "vector-databases",
+      "tags": [
+        "vector-database",
+        "qdrant",
+        "metadata",
+        "rag"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Use this parent skill when the main RAG problem is choosing, configuring, or operating the vector storage layer.",
+      "path": "skills/vector-databases/SKILL.md"
+    }
+  ]
+}

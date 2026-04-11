@@ -1,0 +1,17 @@
+# Local installs and dependencies
+node_modules/
+.agents/
+
+# IDE
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

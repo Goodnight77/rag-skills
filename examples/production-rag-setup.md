@@ -128,6 +128,6 @@ run ingestion asynchronously:
 - [OpenTelemetry documentation](https://opentelemetry.io/docs/)
 
 ## Related Skills
-- [Qdrant for Production RAG](../skills/vector-databases/qdrant-for-production-rag.md)
-- [Optimize Retrieval Latency](../skills/performance-optimization/optimize-retrieval-latency.md)
+- [Qdrant for Production RAG](../skills/vector-databases/qdrant-for-production-rag/SKILL.md)
+- [Optimize Retrieval Latency](../skills/performance-optimization/optimize-retrieval-latency/SKILL.md)
 - [Multi-Agent RAG](./multi-agent-rag.md)

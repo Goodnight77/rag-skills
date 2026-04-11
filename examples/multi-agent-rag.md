@@ -106,6 +106,6 @@ return answer, sources, and trace
 - [Microsoft AutoGen documentation](https://microsoft.github.io/autogen/stable/)
 
 ## Related Skills
-- [Multi-Pass Retrieval with Reranking](../skills/retrieval-strategies/multi-pass-retrieval-with-reranking.md)
-- [Optimize Retrieval Latency](../skills/performance-optimization/optimize-retrieval-latency.md)
-- [RAG for Code Documentation](../skills/data-type-handling/rag-for-code-documentation.md)
+- [Multi-Pass Retrieval with Reranking](../skills/retrieval-strategies/multi-pass-retrieval-with-reranking/SKILL.md)
+- [Optimize Retrieval Latency](../skills/performance-optimization/optimize-retrieval-latency/SKILL.md)
+- [RAG for Code Documentation](../skills/data-type-handling/rag-for-code-documentation/SKILL.md)

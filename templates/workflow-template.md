@@ -14,8 +14,8 @@ tags: ["workflow", "multi-step", "orchestration"]
 [Description of this multi-step workflow and its purpose in RAG systems]
 
 ## Prerequisites
-- [Required Skill 1](../category/skill-name.md)
-- [Required Skill 2](../category/skill-name.md)
+- [Required Skill 1](../category/skill-name/SKILL.md)
+- [Required Skill 2](../category/skill-name/SKILL.md)
 - Required dependencies (Python packages, services, etc.)
 
 ## Workflow Diagram

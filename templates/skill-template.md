@@ -1,4 +1,5 @@
 ---
+name: skill-name
 title: "Skill Name"
 description: "Use this template to define an agent-friendly RAG skill with concise guidance, references, and allowed tool access."
 allowed-tools:
@@ -42,8 +43,8 @@ tags: ["tag1", "tag2", "tag3"]
 - Anti-pattern 2
 
 ## Related Skills
-- [Related Skill 1](../category/skill-name.md)
-- [Related Skill 2](../category/skill-name.md)
+- [Related Skill 1](../category/skill-name/SKILL.md)
+- [Related Skill 2](../category/skill-name/SKILL.md)
 
 ## Implementation Resources
 Fold external links into the surrounding text where possible. When a skill needs source material, reference the implementation inline, for example [project name](https://example.com) in the step or sentence that uses it.

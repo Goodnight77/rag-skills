@@ -23,63 +23,63 @@ or operating a Retrieval-Augmented Generation pipeline.
 
 ### Chunking
 
-- `skills/chunking/semantic-chunking.md`: Chunk by semantic boundaries instead
+- `skills/chunking/semantic-chunking/SKILL.md`: Chunk by semantic boundaries instead
   of fixed token windows.
-- `skills/chunking/hierarchical-chunking.md`: Preserve document hierarchy across
+- `skills/chunking/hierarchical-chunking/SKILL.md`: Preserve document hierarchy across
   sections, headings, and nested structures.
-- `skills/chunking/sliding-window-chunking.md`: Add overlap to preserve context
+- `skills/chunking/sliding-window-chunking/SKILL.md`: Add overlap to preserve context
   near chunk boundaries.
-- `skills/chunking/contextual-chunk-headers.md`: Add inherited section context
+- `skills/chunking/contextual-chunk-headers/SKILL.md`: Add inherited section context
   to chunks.
-- `skills/chunking/choosing-a-chunking-framework.md`: Select chunking libraries
+- `skills/chunking/choosing-a-chunking-framework/SKILL.md`: Select chunking libraries
   and frameworks.
 
 ### Vector Databases
 
-- `skills/vector-databases/qdrant-setup-rag.md`: Set up Qdrant for RAG with
+- `skills/vector-databases/qdrant-setup-rag/SKILL.md`: Set up Qdrant for RAG with
   metadata and filtering.
-- `skills/vector-databases/qdrant-for-production-rag.md`: Operate Qdrant in
+- `skills/vector-databases/qdrant-for-production-rag/SKILL.md`: Operate Qdrant in
   production RAG systems.
-- `skills/vector-databases/choosing-vector-db-by-datatype.md`: Choose a vector
+- `skills/vector-databases/choosing-vector-db-by-datatype/SKILL.md`: Choose a vector
   database for text, code, multimodal, and structured data.
 
 ### Retrieval Strategies
 
-- `skills/retrieval-strategies/hybrid-search-bm25-dense.md`: Combine keyword
+- `skills/retrieval-strategies/hybrid-search-bm25-dense/SKILL.md`: Combine keyword
   and dense vector retrieval.
-- `skills/retrieval-strategies/multi-pass-retrieval-with-reranking.md`: Retrieve
+- `skills/retrieval-strategies/multi-pass-retrieval-with-reranking/SKILL.md`: Retrieve
   broadly, then rerank with a stronger model.
-- `skills/retrieval-strategies/query-transformation-strategies.md`: Rewrite,
+- `skills/retrieval-strategies/query-transformation-strategies/SKILL.md`: Rewrite,
   decompose, or expand queries before retrieval.
-- `skills/retrieval-strategies/hyde-hypothetical-document-embeddings.md`: Use
+- `skills/retrieval-strategies/hyde-hypothetical-document-embeddings/SKILL.md`: Use
   hypothetical answer documents to improve query embeddings.
-- `skills/retrieval-strategies/hype-hypothetical-prompt-embeddings.md`: Index
+- `skills/retrieval-strategies/hype-hypothetical-prompt-embeddings/SKILL.md`: Index
   likely prompts or questions alongside source content.
-- `skills/retrieval-strategies/self-rag.md`: Add self-reflection and retrieval
+- `skills/retrieval-strategies/self-rag/SKILL.md`: Add self-reflection and retrieval
   validation to generation workflows.
-- `skills/retrieval-strategies/raptor-hierarchical-retrieval.md`: Retrieve over
+- `skills/retrieval-strategies/raptor-hierarchical-retrieval/SKILL.md`: Retrieve over
   hierarchical summaries and source chunks.
-- `skills/retrieval-strategies/context-enrichment-window.md`: Expand retrieved
+- `skills/retrieval-strategies/context-enrichment-window/SKILL.md`: Expand retrieved
   chunks with neighboring context.
-- `skills/retrieval-strategies/adaptive-retrieval.md`: Choose retrieval strategy
+- `skills/retrieval-strategies/adaptive-retrieval/SKILL.md`: Choose retrieval strategy
   dynamically based on query type.
-- `skills/retrieval-strategies/explainable-retrieval.md`: Improve traceability
+- `skills/retrieval-strategies/explainable-retrieval/SKILL.md`: Improve traceability
   with source attribution and citations.
-- `skills/retrieval-strategies/crag-corrective-rag.md`: Correct weak retrieval
+- `skills/retrieval-strategies/crag-corrective-rag/SKILL.md`: Correct weak retrieval
   with validation and fallback search.
-- `skills/retrieval-strategies/graph-rag.md`: Use graph structure and entity
+- `skills/retrieval-strategies/graph-rag/SKILL.md`: Use graph structure and entity
   relationships for retrieval.
 
 ### Data Type Handling
 
-- `skills/data-type-handling/rag-for-code-documentation.md`: Handle code,
+- `skills/data-type-handling/rag-for-code-documentation/SKILL.md`: Handle code,
   APIs, examples, and technical documentation.
-- `skills/data-type-handling/rag-for-multimodal-content.md`: Handle images,
+- `skills/data-type-handling/rag-for-multimodal-content/SKILL.md`: Handle images,
   tables, diagrams, and mixed media.
 
 ### Performance Optimization
 
-- `skills/performance-optimization/optimize-retrieval-latency.md`: Reduce
+- `skills/performance-optimization/optimize-retrieval-latency/SKILL.md`: Reduce
   retrieval latency with indexing, caching, and query optimization.
 
 ## Success Criteria

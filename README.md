@@ -36,8 +36,9 @@ Install with the Skills CLI:
 npx skills add Goodnight77/rag-skills
 ```
 
-This installs the root [`SKILL.md`](SKILL.md), which acts as a routing skill for
-the full RAG guide library under [`skills/`](skills/).
+This installs the root [`SKILL.md`](SKILL.md) plus the native skill tree under
+[`skills/`](skills/). Claude Code can discover category skills such as
+`/chunking` and specific skills such as `/semantic-chunking`.
 
 ### Manual Usage
 
@@ -49,7 +50,7 @@ git clone https://github.com/Goodnight77/rag-skills.git
 
 Then point your agent or coding assistant to the `skills/` directory.
 
-> Note: The repository is organized as Markdown skill guides under category folders. Claude Code plugin installation uses the included `.claude-plugin` metadata, while manual agent workflows can read the files directly from `skills/`.
+> Note: This repository follows the Claude Code/Qdrant-style structure: category routers live at paths like `skills/chunking/SKILL.md`, and specific skills live at paths like `skills/chunking/semantic-chunking/SKILL.md`.
 
 ## Skills by Decision Area
 
@@ -57,40 +58,40 @@ This repo is organized as a routing layer for RAG work. Agents can use the categ
 
 ### Chunking
 Use these when the main problem is how to split source material into retrievable units.
-- [Semantic Chunking](skills/chunking/semantic-chunking.md) - Chunk documents based on semantic boundaries
-- [Hierarchical Chunking](skills/chunking/hierarchical-chunking.md) - Multi-level chunking for nested structures
-- [Sliding Window Chunking](skills/chunking/sliding-window-chunking.md) - Overlap-based chunking for context preservation
-- [Contextual Chunk Headers](skills/chunking/contextual-chunk-headers.md) - Adding higher-level context to chunks
+- [Semantic Chunking](skills/chunking/semantic-chunking/SKILL.md) - Chunk documents based on semantic boundaries
+- [Hierarchical Chunking](skills/chunking/hierarchical-chunking/SKILL.md) - Multi-level chunking for nested structures
+- [Sliding Window Chunking](skills/chunking/sliding-window-chunking/SKILL.md) - Overlap-based chunking for context preservation
+- [Contextual Chunk Headers](skills/chunking/contextual-chunk-headers/SKILL.md) - Adding higher-level context to chunks
 
 ### Vector Databases
 Use these when the main problem is choosing or operating the storage layer for embeddings and metadata.
-- [Qdrant Setup for RAG](skills/vector-databases/qdrant-setup-rag.md) - Setting up Qdrant for RAG
-- [Qdrant for Production RAG](skills/vector-databases/qdrant-for-production-rag.md) - Scaling RAG with Qdrant
-- [Choosing Vector DB by Datatype](skills/vector-databases/choosing-vector-db-by-datatype.md) - Database selection guide
+- [Qdrant Setup for RAG](skills/vector-databases/qdrant-setup-rag/SKILL.md) - Setting up Qdrant for RAG
+- [Qdrant for Production RAG](skills/vector-databases/qdrant-for-production-rag/SKILL.md) - Scaling RAG with Qdrant
+- [Choosing Vector DB by Datatype](skills/vector-databases/choosing-vector-db-by-datatype/SKILL.md) - Database selection guide
 
 ### Retrieval Strategies
 Use these when the main problem is search quality, ranking, recall, or combining search methods.
-- [Hybrid Search BM25 Dense](skills/retrieval-strategies/hybrid-search-bm25-dense.md) - Combining keyword and semantic search
-- [Multi-Pass Retrieval with Reranking](skills/retrieval-strategies/multi-pass-retrieval-with-reranking.md) - Two-pass retrieval with cross-encoder reranking
-- [Query Transformation Strategies](skills/retrieval-strategies/query-transformation-strategies.md) - Query rewriting, step-back prompting, sub-query decomposition
-- [HyDE - Hypothetical Document Embeddings](skills/retrieval-strategies/hyde-hypothetical-document-embeddings.md) - Query expansion with LLM-generated documents
-- [HyPE - Hypothetical Prompt Embeddings](skills/retrieval-strategies/hype-hypothetical-prompt-embeddings.md) - Precomputed question embeddings at indexing time
-- [Self-RAG](skills/retrieval-strategies/self-rag.md) - Self-reflective retrieval with relevance evaluation
-- [RAPTOR - Hierarchical Retrieval](skills/retrieval-strategies/raptor-hierarchical-retrieval.md) - Multi-level tree of document summaries
-- [Context Enrichment Window](skills/retrieval-strategies/context-enrichment-window.md) - Adding surrounding chunks to retrieved results
-- [Adaptive Retrieval](skills/retrieval-strategies/adaptive-retrieval.md) - Dynamic strategy selection based on query type
-- [Explainable Retrieval with Citations](skills/retrieval-strategies/explainable-retrieval.md) - Traceability and source attribution
-- [CRAG - Corrective RAG](skills/retrieval-strategies/crag-corrective-rag.md) - Dynamic correction with web search
-- [Graph RAG](skills/retrieval-strategies/graph-rag.md) - Knowledge graph-based retrieval
+- [Hybrid Search BM25 Dense](skills/retrieval-strategies/hybrid-search-bm25-dense/SKILL.md) - Combining keyword and semantic search
+- [Multi-Pass Retrieval with Reranking](skills/retrieval-strategies/multi-pass-retrieval-with-reranking/SKILL.md) - Two-pass retrieval with cross-encoder reranking
+- [Query Transformation Strategies](skills/retrieval-strategies/query-transformation-strategies/SKILL.md) - Query rewriting, step-back prompting, sub-query decomposition
+- [HyDE - Hypothetical Document Embeddings](skills/retrieval-strategies/hyde-hypothetical-document-embeddings/SKILL.md) - Query expansion with LLM-generated documents
+- [HyPE - Hypothetical Prompt Embeddings](skills/retrieval-strategies/hype-hypothetical-prompt-embeddings/SKILL.md) - Precomputed question embeddings at indexing time
+- [Self-RAG](skills/retrieval-strategies/self-rag/SKILL.md) - Self-reflective retrieval with relevance evaluation
+- [RAPTOR - Hierarchical Retrieval](skills/retrieval-strategies/raptor-hierarchical-retrieval/SKILL.md) - Multi-level tree of document summaries
+- [Context Enrichment Window](skills/retrieval-strategies/context-enrichment-window/SKILL.md) - Adding surrounding chunks to retrieved results
+- [Adaptive Retrieval](skills/retrieval-strategies/adaptive-retrieval/SKILL.md) - Dynamic strategy selection based on query type
+- [Explainable Retrieval with Citations](skills/retrieval-strategies/explainable-retrieval/SKILL.md) - Traceability and source attribution
+- [CRAG - Corrective RAG](skills/retrieval-strategies/crag-corrective-rag/SKILL.md) - Dynamic correction with web search
+- [Graph RAG](skills/retrieval-strategies/graph-rag/SKILL.md) - Knowledge graph-based retrieval
 
 ### Data Type Handling
 Use these when the source content is code, APIs, diagrams, tables, or mixed media.
-- [RAG for Code Documentation](skills/data-type-handling/rag-for-code-documentation.md) - Special handling for code and technical docs
-- [RAG for Multimodal Content](skills/data-type-handling/rag-for-multimodal-content.md) - Images, tables, and mixed media
+- [RAG for Code Documentation](skills/data-type-handling/rag-for-code-documentation/SKILL.md) - Special handling for code and technical docs
+- [RAG for Multimodal Content](skills/data-type-handling/rag-for-multimodal-content/SKILL.md) - Images, tables, and mixed media
 
 ### Performance Optimization
 Use these when the problem is latency, throughput, cache behavior, or production efficiency.
-- [Optimize Retrieval Latency](skills/performance-optimization/optimize-retrieval-latency.md) - Caching, indexing, and query optimization
+- [Optimize Retrieval Latency](skills/performance-optimization/optimize-retrieval-latency/SKILL.md) - Caching, indexing, and query optimization
 
 ### RAG Agents
 Use these when the problem is orchestration, delegation, or multi-step workflows.
@@ -150,8 +151,10 @@ Each skill follows a consistent structure with a short illustrative snippet, not
 This is an active open-source project. Skills are continuously added and updated as RAG best practices evolve.
 
 Current statistics:
-- **Total Skills**: 21
-- **Categories**: 7
+- **Native Skills**: 28
+- **Guide Skills**: 23
+- **Category Router Skills**: 5
+- **Categories**: 5
 - **Examples**: 3
 
 *Run `python scripts/generate-index.py` for current statistics.*

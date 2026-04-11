@@ -45,6 +45,16 @@ Use the template as a lightweight reference format: brief illustrative text, no 
 
 Organize skills by category:
 
+```text
+skills/<category>/<skill-name>/SKILL.md
+```
+
+For example:
+
+```text
+skills/chunking/semantic-chunking/SKILL.md
+```
+
 If your category doesn't exist, create it in the appropriate location.
 
 ### Step 4: Validate Your Skill
@@ -102,8 +112,8 @@ When reviewing skills, maintainers evaluate them against these criteria:
 
 ### Skill Files
 
-- Use kebab-case: `semantic-chunking.md`
-- Be descriptive: `hybrid-search-bm25-dense.md`
+- Use kebab-case directory names: `semantic-chunking/SKILL.md`
+- Be descriptive: `hybrid-search-bm25-dense/SKILL.md`
 - Keep names under 50 characters
 
 ### Categories
@@ -117,15 +127,6 @@ Use existing category names:
 - `evaluation-metrics`
 - `rag-agents`
 - `deployment`
-
-### Levels
-
-Use one of:
-- `beginner` — Basic concepts, minimal dependencies
-- `intermediate` — Some experience required, moderate complexity
-- `advanced` — Expert knowledge, complex implementations
-
-If you keep the level field in a skill file, treat it as metadata for filtering rather than a required browsing path in the README.
 
 ### Tags
 

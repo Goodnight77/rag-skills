@@ -99,6 +99,6 @@ for each user query:
 - [OpenAI cookbook RAG examples](https://github.com/openai/openai-cookbook/tree/main/examples)
 
 ## Related Skills
-- [Semantic Chunking](../skills/chunking/semantic-chunking.md)
-- [Qdrant Setup for RAG](../skills/vector-databases/qdrant-setup-rag.md)
-- [Hybrid Search BM25 Dense](../skills/retrieval-strategies/hybrid-search-bm25-dense.md)
+- [Semantic Chunking](../skills/chunking/semantic-chunking/SKILL.md)
+- [Qdrant Setup for RAG](../skills/vector-databases/qdrant-setup-rag/SKILL.md)
+- [Hybrid Search BM25 Dense](../skills/retrieval-strategies/hybrid-search-bm25-dense/SKILL.md)

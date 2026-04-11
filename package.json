@@ -18,8 +18,5 @@
     "llm",
     "skills"
   ],
-  "license": "MIT",
-  "dependencies": {
-    "rag-skills": "^1.0.0"
-  }
+  "license": "MIT"
 }
