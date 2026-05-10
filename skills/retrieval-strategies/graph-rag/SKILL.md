@@ -49,7 +49,7 @@ Create nodes for entities and edges for relationships, building a graph structur
 ### Step 3: Detect Communities
 Apply community detection algorithms to identify clusters of related entities.
 
-**Why**: Communities represent thematic groupings in the graph—entities that are closely connected form natural clusters that can be summarized together.
+**Why**: Communities represent thematic groupings in the graph - entities that are closely connected form natural clusters that can be summarized together.
 
 Use community detection algorithms (e.g., Leiden, Louvain) to find clusters of highly connected entities.
 

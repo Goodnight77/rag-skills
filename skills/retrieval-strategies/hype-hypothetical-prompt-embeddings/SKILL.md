@@ -54,7 +54,7 @@ Build a vector index where each question embedding points to its corresponding s
 ### Step 4: Implement Efficient Retrieval
 Query the index directly without runtime question generation.
 
-**Why**: Since questions are precomputed, retrieval is as fast as standard vector search—no LLM latency or cost at query time.
+**Why**: Since questions are precomputed, retrieval is as fast as standard vector search - no LLM latency or cost at query time.
 
 Perform standard vector similarity search using the user's query against the precomputed question embeddings.
 

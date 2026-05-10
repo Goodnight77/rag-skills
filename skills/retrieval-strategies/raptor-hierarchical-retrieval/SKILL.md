@@ -48,7 +48,7 @@ For each cluster, concatenate the documents and use an LLM to generate a concise
 ### Step 3: Build Tree Hierarchically
 Recursively apply embedding, clustering, and summarization to build multiple levels.
 
-**Why**: Multiple levels of abstraction allow the system to retrieve at appropriate granularity—broad context from high levels, specific details from low levels.
+**Why**: Multiple levels of abstraction allow the system to retrieve at appropriate granularity - broad context from high levels, specific details from low levels.
 
 Apply the same process to the summaries created in the previous level, building up the tree until reaching a single root summary or maximum levels.
 

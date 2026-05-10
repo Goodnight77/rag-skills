@@ -16,9 +16,9 @@ Multi-pass retrieval with reranking is a two-stage approach that first retrieves
 
 ## Problem Statement
 Single-stage retrieval has inherent trade-offs:
-- **Bi-encoder only**: Fast but limited relevance—struggles with complex query-document relationships
+- **Bi-encoder only**: Fast but limited relevance - struggles with complex query-document relationships
 - **Cross-encoder only**: Accurate but too slow for large document collections
-- **Fixed top-k**: Can't adapt to query difficulty—some queries need more/ fewer candidates
+- **Fixed top-k**: Can't adapt to query difficulty - some queries need more/ fewer candidates
 - **Static retrieval**: Can't incorporate user feedback or context during retrieval
 
 ## Key Concepts
@@ -33,7 +33,7 @@ Single-stage retrieval has inherent trade-offs:
 ### Step 1: Set Up Bi-Encoder Retrieval
 Implement the first-stage retrieval using your vector database.
 
-**Why**: Bi-encoder retrieval is fast and scalable but produces approximate scores—suitable for the first pass to narrow candidates.
+**Why**: Bi-encoder retrieval is fast and scalable but produces approximate scores - suitable for the first pass to narrow candidates.
 
 ### Step 2: Set Up Cross-Encoder Reranking
 Implement the second-stage reranking for accurate scoring.

@@ -39,7 +39,7 @@ Establish baseline measurements before optimization.
 ### Step 2: Optimize Embedding Generation
 Reduce the overhead of generating query embeddings.
 
-**Why**: Embedding generation is often the bottleneck—caching reduces this overhead for repeated queries.
+**Why**: Embedding generation is often the bottleneck - caching reduces this overhead for repeated queries.
 
 ### Step 3: Optimize Vector Database Operations
 Tune indexing and search parameters for latency.

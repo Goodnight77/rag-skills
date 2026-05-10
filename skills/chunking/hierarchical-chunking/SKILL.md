@@ -33,12 +33,12 @@ Flat chunking strategies lose the structural relationships within documents:
 ### Step 1: Parse Document Structure
 Extract the hierarchical structure of your documents.
 
-**Why**: Proper parsing is foundational—you can't create a hierarchy without understanding the structure.
+**Why**: Proper parsing is foundational - you can't create a hierarchy without understanding the structure.
 
 ### Step 2: Create Multi-Level Chunks
 Generate chunks at multiple levels from the parsed hierarchy.
 
-**Why**: Multiple chunk levels allow different retrieval strategies—summary chunks for broad questions, detailed chunks for specifics.
+**Why**: Multiple chunk levels allow different retrieval strategies - summary chunks for broad questions, detailed chunks for specifics.
 
 ### Step 3: Store Hierarchy Metadata
 Persist hierarchy information for retrieval-time context propagation.

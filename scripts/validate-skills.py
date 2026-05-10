@@ -54,7 +54,7 @@ def get_category(path: Path) -> str:
 def validate_skill(path: Path) -> list[str]:
     """Validate a single skill file. Returns list of errors/warnings."""
     errors = []
-    content = path.read_text()
+    content = path.read_text(encoding="utf-8")
     lines = content.strip().split("\n")
     line_count = len(lines)
     body = get_body(content)

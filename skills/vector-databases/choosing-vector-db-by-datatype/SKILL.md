@@ -79,7 +79,7 @@ Tailor your approach to each data type.
 ### Step 4: Proof of Concept
 Create a PoC to validate your choice.
 
-**Why**: Nothing beats testing with your actual data and queries—PoCs reveal real-world performance characteristics.
+**Why**: Nothing beats testing with your actual data and queries - PoCs reveal real-world performance characteristics.
 
 ### Step 5: Migration Path
 Plan for potential future database changes.

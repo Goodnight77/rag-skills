@@ -33,7 +33,7 @@ Non-overlapping chunking creates hard boundaries that can break important contex
 ### Step 1: Determine Overlap Parameters
 Calculate appropriate overlap based on your use case and chunk size.
 
-**Why**: The overlap ratio determines how much context is preserved—too little loses context, too much creates redundancy.
+**Why**: The overlap ratio determines how much context is preserved - too little loses context, too much creates redundancy.
 
 ### Step 2: Implement Sliding Window Chunking
 Create chunks with configurable overlap.

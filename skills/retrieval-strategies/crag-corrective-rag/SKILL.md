@@ -41,7 +41,7 @@ Use an LLM to score each retrieved document on a scale from 0 to 1 based on how 
 ### Step 2: Implement Decision Logic
 Determine correction strategy based on relevance scores.
 
-**Why**: Different relevance levels require different approaches—high relevance uses local content, low relevance triggers web search, ambiguous cases combine both.
+**Why**: Different relevance levels require different approaches - high relevance uses local content, low relevance triggers web search, ambiguous cases combine both.
 
 - High relevance (>0.7): Use local retrieval as-is
 - Low relevance (<0.3): Rely on web search
@@ -71,7 +71,7 @@ Integrate with web search APIs (e.g., DuckDuckGo, Bing) to fetch external inform
 ### Step 6: Implement Response Generation
 Generate responses using appropriate knowledge sources based on correction strategy.
 
-**Why**: The response generator must handle different knowledge sources—local documents, web results, or combined information—with appropriate attribution.
+**Why**: The response generator must handle different knowledge sources - local documents, web results, or combined information - with appropriate attribution.
 
 Generate responses conditioned on the correction strategy: using local content, web results, or combined sources.
 

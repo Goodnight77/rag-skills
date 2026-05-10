@@ -12,7 +12,7 @@ tags: ["explainability", "citations", "traceability", "source-attribution"]
 ---
 
 ## Overview
-Explainable retrieval adds citations, source attribution, and traceability to RAG systems. Users can see which documents support each claim, verify information sources, and understand how responses were generated—critical for applications requiring trust and accountability.
+Explainable retrieval adds citations, source attribution, and traceability to RAG systems. Users can see which documents support each claim, verify information sources, and understand how responses were generated - critical for applications requiring trust and accountability.
 
 ## Problem Statement
 Traditional RAG systems lack transparency:
@@ -76,7 +76,7 @@ Format the structured response with clickable links, visual indicators of confid
 ### Step 7: Build Complete Explainable Retrieval Pipeline
 Combine all components into a cohesive system.
 
-**Why**: A complete pipeline ensures that every aspect of the response—from claims to citations to confidence scores—is properly tracked and displayed.
+**Why**: A complete pipeline ensures that every aspect of the response - from claims to citations to confidence scores - is properly tracked and displayed.
 
 For implementation patterns, see [LlamaIndex node postprocessors](https://docs.llamaindex.ai/en/stable/module_guides/querying/node_postprocessors/), the [Attributed Quote Generation paper](https://arxiv.org/abs/2211.10592), and the [LangChain RAG guide](https://docs.langchain.com/oss/python/langchain/rag).
 

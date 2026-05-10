@@ -12,7 +12,7 @@ tags: ["hybrid", "bm25", "dense", "fusion", "keyword"]
 ---
 
 ## Overview
-Hybrid search combines BM25 (keyword search) with dense vector embeddings (semantic search) to leverage both exact term matching and semantic understanding. This dual approach improves retrieval quality across diverse query types—keyword queries get exact matches, while semantic queries capture conceptual relationships.
+Hybrid search combines BM25 (keyword search) with dense vector embeddings (semantic search) to leverage both exact term matching and semantic understanding. This dual approach improves retrieval quality across diverse query types - keyword queries get exact matches, while semantic queries capture conceptual relationships.
 
 ## Problem Statement
 Pure semantic search or pure keyword search each have limitations:
@@ -42,7 +42,7 @@ Implement keyword-based search using BM25.
 ### Step 3: Implement Score Normalization
 Normalize scores from different ranking methods to comparable scales.
 
-**Why**: Different scoring systems (cosine similarity vs. BM25 scores) can't be directly combined—normalization creates a common scale.
+**Why**: Different scoring systems (cosine similarity vs. BM25 scores) can't be directly combined - normalization creates a common scale.
 
 ### Step 4: Implement Result Fusion
 Combine results from multiple search methods.

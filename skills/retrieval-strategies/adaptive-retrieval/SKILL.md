@@ -35,7 +35,7 @@ One-size-fits-all retrieval has inherent limitations:
 ### Step 1: Implement Query Classifier
 Use an LLM to classify queries into types.
 
-**Why**: Accurate classification is the foundation of adaptive retrieval—the right strategy depends on correctly identifying the query type.
+**Why**: Accurate classification is the foundation of adaptive retrieval - the right strategy depends on correctly identifying the query type.
 
 Direct the LLM to classify queries into categories: factual, analytical, opinion, or contextual.
 

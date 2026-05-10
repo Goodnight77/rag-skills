@@ -38,7 +38,7 @@ Use sentence boundary detection rather than simple period splitting. This handle
 ### Step 2: Group Sentences into Semantic Units
 Group sentences into chunks based on semantic cohesion rather than fixed counts.
 
-**Why**: Similarity-based chunking adapts to document density—dense technical sections get smaller chunks, narrative sections get larger ones.
+**Why**: Similarity-based chunking adapts to document density - dense technical sections get smaller chunks, narrative sections get larger ones.
 
 ### Step 3: Apply Structure-Based Chunking
 Leverage document structure (headings, markdown, HTML tags) to identify natural sections.

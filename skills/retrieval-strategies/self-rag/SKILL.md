@@ -34,7 +34,7 @@ Traditional RAG systems lack introspection:
 ### Step 1: Implement Retrieval Decision
 Use an LLM to determine if the query requires retrieval or can be answered directly.
 
-**Why**: Not all queries need retrieval—some can be answered from general knowledge or are simple enough that retrieval adds unnecessary cost and latency.
+**Why**: Not all queries need retrieval - some can be answered from general knowledge or are simple enough that retrieval adds unnecessary cost and latency.
 
 Direct the LLM to make a binary decision: retrieve from documents or answer without retrieval.
 
@@ -57,12 +57,12 @@ Generate responses using only relevant context, or without context if none is re
 
 **Why**: Using only relevant context improves factual grounding. When no relevant context exists, the system can still provide a response (with appropriate caveats) rather than forcing use of irrelevant information.
 
-Generate responses conditioned on whether relevant context was found—using context if available, answering from general knowledge if not.
+Generate responses conditioned on whether relevant context was found - using context if available, answering from general knowledge if not.
 
 ### Step 5: Implement Support Assessment
 Evaluate how well the generated response is supported by the context.
 
-**Why**: Support assessment provides a confidence metric and helps detect hallucinations—responses not supported by context can be flagged or refined.
+**Why**: Support assessment provides a confidence metric and helps detect hallucinations - responses not supported by context can be flagged or refined.
 
 Have the LLM classify the level of support: fully supported, partially supported, or no support.
 
