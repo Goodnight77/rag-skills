@@ -95,15 +95,19 @@ Use these when the problem is latency, throughput, cache behavior, or production
 
 ### RAG Agents
 Use these when the problem is orchestration, delegation, or multi-step workflows.
-- *See [Examples](#examples) for multi-agent workflows*
+- [Agentic RAG Routing](skills/rag-agents/agentic-rag-routing/SKILL.md) - Route each query to the right strategy, source, or tool
+- [Multi-Agent RAG Orchestration](skills/rag-agents/multi-agent-rag-orchestration/SKILL.md) - Planner and specialist agents for complex answers
 
 ### Deployment
 Use these when the problem is production rollout, reliability, or operationalization.
-- *See [Production RAG Setup](#examples)*
+- [Production RAG Deployment](skills/deployment/production-rag-deployment/SKILL.md) - Serve, scale, and roll out safely
+- [Index Versioning and Reindexing](skills/deployment/index-versioning-and-reindexing/SKILL.md) - Zero-downtime reindex and embedding migration
 
 ### Evaluation Metrics
 Use these when the problem is measurement, regression detection, or retrieval benchmarking.
-- *Coming soon*
+- [Retrieval Evaluation Metrics](skills/evaluation-metrics/retrieval-evaluation-metrics/SKILL.md) - Recall, precision, MRR, nDCG, context precision/recall
+- [Generation Evaluation Metrics](skills/evaluation-metrics/generation-evaluation-metrics/SKILL.md) - Faithfulness, answer relevancy, correctness, LLM-as-judge
+- [RAG Evaluation Frameworks](skills/evaluation-metrics/rag-evaluation-frameworks/SKILL.md) - RAGAS, DeepEval, TruLens, and CI regression gates
 
 ## Quick Start
 
@@ -151,10 +155,10 @@ Each skill follows a consistent structure with a short illustrative snippet, not
 This is an active open-source project. Skills are continuously added and updated as RAG best practices evolve.
 
 Current statistics:
-- **Native Skills**: 28
-- **Guide Skills**: 23
-- **Category Router Skills**: 5
-- **Categories**: 5
+- **Native Skills**: 38
+- **Guide Skills**: 30
+- **Category Router Skills**: 8
+- **Categories**: 8
 - **Examples**: 3
 
 *Run `python scripts/generate-index.py` for current statistics.*

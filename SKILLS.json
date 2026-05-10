@@ -1,10 +1,12 @@
 {
-  "generated": "2026-04-11T03:11:54.579913",
-  "total_skills": 28,
+  "total_skills": 38,
   "categories": {
     "chunking": 6,
     "data-type-handling": 3,
+    "deployment": 3,
+    "evaluation-metrics": 4,
     "performance-optimization": 2,
+    "rag-agents": 3,
     "retrieval-strategies": 13,
     "vector-databases": 4
   },
@@ -149,6 +151,113 @@
       "path": "skills/data-type-handling/SKILL.md"
     },
     {
+      "id": "index-versioning-and-reindexing",
+      "title": "Index Versioning and Reindexing",
+      "category": "deployment",
+      "tags": [
+        "reindexing",
+        "versioning",
+        "embedding-migration",
+        "blue-green"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "This skill covers evolving the index behind a live RAG system: rebuilding embeddings after a model or chunking change, migrating between embedding models, and versioning indexes so changes are reversible and queries never go dark.",
+      "path": "skills/deployment/index-versioning-and-reindexing/SKILL.md"
+    },
+    {
+      "id": "production-rag-deployment",
+      "title": "Production RAG Deployment",
+      "category": "deployment",
+      "tags": [
+        "serving",
+        "scaling",
+        "canary",
+        "observability"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "This skill covers turning a working RAG pipeline into a reliable production service: exposing it behind an API, scaling retrieval and generation independently, caching hot paths, and rolling out changes without breaking users.",
+      "path": "skills/deployment/production-rag-deployment/SKILL.md"
+    },
+    {
+      "id": "deployment",
+      "title": "Deployment",
+      "category": "deployment",
+      "tags": [
+        "deployment",
+        "production",
+        "reindexing",
+        "routing"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Use this parent skill when the RAG system works in development but must be made reliable in production.",
+      "path": "skills/deployment/SKILL.md"
+    },
+    {
+      "id": "generation-evaluation-metrics",
+      "title": "Generation Evaluation Metrics",
+      "category": "evaluation-metrics",
+      "tags": [
+        "generation",
+        "faithfulness",
+        "llm-as-judge",
+        "hallucination"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Generation evaluation measures the answer itself: whether it is grounded in the retrieved context, addresses the question, and is factually correct.",
+      "path": "skills/evaluation-metrics/generation-evaluation-metrics/SKILL.md"
+    },
+    {
+      "id": "rag-evaluation-frameworks",
+      "title": "RAG Evaluation Frameworks",
+      "category": "evaluation-metrics",
+      "tags": [
+        "ragas",
+        "deepeval",
+        "trulens",
+        "ci",
+        "regression"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "This skill covers the tooling layer of RAG evaluation: which framework to adopt, how to structure a golden set, and how to run evaluation automatically on every change so quality regressions are blocked before they ship.",
+      "path": "skills/evaluation-metrics/rag-evaluation-frameworks/SKILL.md"
+    },
+    {
+      "id": "retrieval-evaluation-metrics",
+      "title": "Retrieval Evaluation Metrics",
+      "category": "evaluation-metrics",
+      "tags": [
+        "retrieval",
+        "recall",
+        "ndcg",
+        "mrr",
+        "context-precision"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Retrieval evaluation measures whether the pipeline fetched the right chunks before the LLM ever sees them.",
+      "path": "skills/evaluation-metrics/retrieval-evaluation-metrics/SKILL.md"
+    },
+    {
+      "id": "evaluation-metrics",
+      "title": "Evaluation Metrics",
+      "category": "evaluation-metrics",
+      "tags": [
+        "evaluation",
+        "metrics",
+        "ragas",
+        "routing"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Use this parent skill when the main RAG problem is measuring quality, detecting regressions, or proving that a change actually helped.",
+      "path": "skills/evaluation-metrics/SKILL.md"
+    },
+    {
       "id": "optimize-retrieval-latency",
       "title": "Optimize Retrieval Latency",
       "category": "performance-optimization",
@@ -178,6 +287,51 @@
       "last_updated": "",
       "description": "Use this parent skill when the RAG system works functionally but is too slow, expensive, or unstable under expected traffic.",
       "path": "skills/performance-optimization/SKILL.md"
+    },
+    {
+      "id": "agentic-rag-routing",
+      "title": "Agentic RAG Routing",
+      "category": "rag-agents",
+      "tags": [
+        "routing",
+        "tool-use",
+        "query-classification",
+        "agentic-rag"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Agentic routing puts a decision step in front of retrieval: the agent classifies the query and chooses whether to retrieve, which source or index to hit, and which tool to call.",
+      "path": "skills/rag-agents/agentic-rag-routing/SKILL.md"
+    },
+    {
+      "id": "multi-agent-rag-orchestration",
+      "title": "Multi-Agent RAG Orchestration",
+      "category": "rag-agents",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "planner",
+        "decomposition"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Multi-agent orchestration splits a complex question across specialized agents, such as a planner, one or more retrievers, and a synthesizer.",
+      "path": "skills/rag-agents/multi-agent-rag-orchestration/SKILL.md"
+    },
+    {
+      "id": "rag-agents",
+      "title": "RAG Agents",
+      "category": "rag-agents",
+      "tags": [
+        "agents",
+        "agentic-rag",
+        "orchestration",
+        "routing"
+      ],
+      "author": "",
+      "last_updated": "",
+      "description": "Use this parent skill when a single retrieve-then-generate pass is not enough and the system must decide what to retrieve, which tools to call, or how to split work across agents.",
+      "path": "skills/rag-agents/SKILL.md"
     },
     {
       "id": "adaptive-retrieval",

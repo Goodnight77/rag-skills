@@ -73,94 +73,19 @@ Pick the framework whose strengths best match the workload.
 | **[Chonkie](https://docs.chonkie.ai/oss/chunkers/overview)** | Specialized chunking strategies, high throughput, semantic and code-aware chunking | Chunking is a first-class problem, you need semantic/code chunkers, or ingestion speed matters | You want the simplest possible default inside an existing LangChain or Haystack app |
 | **[LangChain Text Splitters](https://docs.langchain.com/oss/python/integrations/splitters/index)** | Simple, reliable general-purpose chunking tightly integrated with LangChain apps | You already use LangChain or LangGraph and need practical default chunking with minimal extra tooling | You need deeply specialized code, layout, or semantic chunking beyond standard splitter patterns |
 | **[LlamaIndex Node Parsers](https://developers.llamaindex.ai/python/framework/module_guides/loading/node_parsers/)** | Metadata-rich nodes, sentence windows, hierarchical parsing, retrieval-aware chunking | You use LlamaIndex ingestion/query pipelines or need chunking that preserves node relationships and retrieval metadata | You only need straightforward standalone chunking without adopting LlamaIndex concepts |
-| **[Haystack Preprocessors](https://docs.haystack.deepset.ai/docs/documentsplitter)** | Deterministic pipeline-based splitting for production search systems | You are building around Haystack pipelines and want predictable document preprocessing components | You need more advanced semantic or code-aware chunking than Haystack’s built-in preprocessors provide |
+| **[Haystack Preprocessors](https://docs.haystack.deepset.ai/docs/documentsplitter)** | Deterministic pipeline-based splitting for production search systems | You are building around Haystack pipelines and want predictable document preprocessing components | You need more advanced semantic or code-aware chunking than Haystack's built-in preprocessors provide |
 | **[Unstructured Chunking](https://docs.unstructured.io/open-source/core-functionality/chunking)** | Partition-first chunking for PDFs, Office docs, HTML, tables, and layout-heavy content | Your main challenge is document parsing and structural preservation before chunking | Your corpus is already clean text and you do not need layout-aware parsing |
 
-### Step 5: Apply Framework-Specific Guidance
-Use the framework only in the situations where it has a clear advantage.
+### Step 5: Go to the Chosen Framework's Chunking Docs
+Once the matrix points to a framework, use its chunking primitives directly. Adopt a
+framework's chunker only where it has a clear advantage, and avoid mixing ingestion
+frameworks without a reason.
 
-**Why**: Each framework has a distinct operating model. Mixing them without a reason usually adds complexity.
-
-#### Chonkie
-Use [Chonkie](https://www.chonkie.ai/) when chunking itself is the focus of the system.
-
-Strong fit:
-- You need a dedicated chunking library rather than a general LLM framework
-- You want to choose among token, sentence, recursive, semantic, late, fast, or code chunkers
-- You have code repositories or technical docs where chunk coherence matters
-- You have high-throughput ingestion where fast chunking is important
-
-Especially relevant docs:
-- [Chunkers overview](https://docs.chonkie.ai/oss/chunkers/overview)
-- [RecursiveChunker](https://docs.chonkie.ai/oss/chunkers/recursive-chunker)
-- [SemanticChunker](https://docs.chonkie.ai/oss/chunkers/semantic-chunker)
-- [CodeChunker](https://docs.chonkie.ai/oss/chunkers/code-chunker)
-- [FastChunker](https://docs.chonkie.ai/oss/chunkers/fast-chunker)
-
-Do not choose Chonkie just because it has more chunkers. Choose it when those chunkers materially improve your corpus handling.
-
-#### LangChain
-Use [LangChain Text Splitters](https://docs.langchain.com/oss/python/integrations/splitters/index) when you want a practical default inside a LangChain or LangGraph application.
-
-Strong fit:
-- You already use LangChain loaders, embeddings, retrievers, or agents
-- You want an opinionated default like `RecursiveCharacterTextSplitter`
-- You need markdown, JSON, HTML, or code splitting without introducing another ingestion framework
-- You value integration speed over chunking specialization
-
-Especially relevant docs:
-- [Text splitters overview](https://docs.langchain.com/oss/python/integrations/splitters/index)
-- [RecursiveCharacterTextSplitter](https://docs.langchain.com/oss/python/integrations/splitters/recursive_text_splitter)
-- [CharacterTextSplitter](https://docs.langchain.com/oss/python/integrations/splitters/character_text_splitter)
-
-Do not choose LangChain if you need the strongest code-aware or layout-aware chunking and are willing to use a more specialized tool.
-
-#### LlamaIndex
-Use [LlamaIndex Node Parsers](https://developers.llamaindex.ai/python/framework/module_guides/loading/node_parsers/) when chunking is tightly coupled to retrieval behavior and metadata-rich nodes.
-
-Strong fit:
-- You want sentence-window retrieval, node relationships, or hierarchical retrieval patterns
-- You care about chunk metadata because retrieval and postprocessing depend on it
-- You are already using LlamaIndex ingestion pipelines, retrievers, and node postprocessors
-- You want chunking that fits directly into a retrieval-aware framework
-
-Especially relevant docs:
-- [Node parser usage](https://developers.llamaindex.ai/python/framework/module_guides/loading/node_parsers/)
-- [HierarchicalNodeParser](https://docs.llamaindex.ai/en/stable/api_reference/node_parsers/hierarchical/)
-- [SentenceWindowNodeParser](https://docs.llamaindex.ai/en/stable/api_reference/node_parsers/sentence_window/)
-
-Do not choose LlamaIndex if you only need a lightweight chunker and do not want its document and node abstractions in the pipeline.
-
-#### Haystack
-Use [Haystack preprocessors](https://docs.haystack.deepset.ai/docs/documentsplitter) when the application is built as a search or RAG pipeline and you want deterministic preprocessing components.
-
-Strong fit:
-- You use Haystack pipelines end-to-end
-- You need sentence, passage, page, line, or function splitting in a production-oriented indexing flow
-- You want hierarchical document splitting without adopting a different ingestion framework
-- You value stable preprocessing stages more than cutting-edge chunking algorithms
-
-Especially relevant docs:
-- [DocumentSplitter](https://docs.haystack.deepset.ai/docs/documentsplitter)
-- [HierarchicalDocumentSplitter](https://docs.haystack.deepset.ai/docs/hierarchicaldocumentsplitter)
-- [DocumentPreprocessor](https://docs.haystack.deepset.ai/docs/documentpreprocessor)
-
-Do not choose Haystack for advanced semantic chunking if you are not otherwise using Haystack.
-
-#### Unstructured
-Use [Unstructured chunking](https://docs.unstructured.io/open-source/core-functionality/chunking) when the hard problem is not text splitting but extracting meaningful document elements first.
-
-Strong fit:
-- Your corpus includes PDFs, PowerPoints, HTML, tables, page layouts, and other messy enterprise documents
-- You want chunking to follow structural elements created during partitioning
-- You need section-preserving chunking such as `by_title`
-- You care about table isolation, page boundaries, or composite document elements
-
-Especially relevant docs:
-- [Open-source chunking](https://docs.unstructured.io/open-source/core-functionality/chunking)
-- [Platform API chunking strategies](https://docs.unstructured.io/platform-api/partition-api/chunking)
-
-Do not choose Unstructured when the documents are already clean plain text and layout parsing adds no value.
+- **Chonkie** (chunking-first library; token, recursive, semantic, code, fast chunkers): [overview](https://docs.chonkie.ai/oss/chunkers/overview), [RecursiveChunker](https://docs.chonkie.ai/oss/chunkers/recursive-chunker), [SemanticChunker](https://docs.chonkie.ai/oss/chunkers/semantic-chunker), [CodeChunker](https://docs.chonkie.ai/oss/chunkers/code-chunker)
+- **LangChain** (default inside LangChain/LangGraph apps): [splitters overview](https://docs.langchain.com/oss/python/integrations/splitters/index), [RecursiveCharacterTextSplitter](https://docs.langchain.com/oss/python/integrations/splitters/recursive_text_splitter)
+- **LlamaIndex** (metadata-rich nodes, sentence-window and hierarchical retrieval): [node parsers](https://developers.llamaindex.ai/python/framework/module_guides/loading/node_parsers/), [HierarchicalNodeParser](https://docs.llamaindex.ai/en/stable/api_reference/node_parsers/hierarchical/), [SentenceWindowNodeParser](https://docs.llamaindex.ai/en/stable/api_reference/node_parsers/sentence_window/)
+- **Haystack** (deterministic pipeline preprocessing): [DocumentSplitter](https://docs.haystack.deepset.ai/docs/documentsplitter), [HierarchicalDocumentSplitter](https://docs.haystack.deepset.ai/docs/hierarchicaldocumentsplitter)
+- **Unstructured** (partition-first for PDFs, Office, HTML, tables; `by_title`): [chunking](https://docs.unstructured.io/open-source/core-functionality/chunking), [API strategies](https://docs.unstructured.io/platform-api/partition-api/chunking)
 
 ## When to Use This Skill
 - When deciding which chunking framework a coding agent should adopt for a new RAG pipeline

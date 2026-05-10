@@ -1,8 +1,6 @@
 # RAG Skills Index
 
-Generated: 2026-04-11 03:11:54
-
-Total Skills: 28
+Total Skills: 38
 
 ---
 
@@ -32,12 +30,41 @@ Total Skills: 28
 - [Data Type Handling](skills/data-type-handling/SKILL.md)
   - *Use this parent skill when source material is not plain prose or when different data types need different parsing, metadata, chunking, and retrieval strategies.*
 
+### Deployment
+
+- [Index Versioning and Reindexing](skills/deployment/index-versioning-and-reindexing/SKILL.md)
+  - *This skill covers evolving the index behind a live RAG system: rebuilding embeddings after a model or chunking change, migrating between embedding models, and versioning indexes so changes are reversible and queries never go dark.*
+- [Production RAG Deployment](skills/deployment/production-rag-deployment/SKILL.md)
+  - *This skill covers turning a working RAG pipeline into a reliable production service: exposing it behind an API, scaling retrieval and generation independently, caching hot paths, and rolling out changes without breaking users.*
+- [Deployment](skills/deployment/SKILL.md)
+  - *Use this parent skill when the RAG system works in development but must be made reliable in production.*
+
+### Evaluation Metrics
+
+- [Generation Evaluation Metrics](skills/evaluation-metrics/generation-evaluation-metrics/SKILL.md)
+  - *Generation evaluation measures the answer itself: whether it is grounded in the retrieved context, addresses the question, and is factually correct.*
+- [RAG Evaluation Frameworks](skills/evaluation-metrics/rag-evaluation-frameworks/SKILL.md)
+  - *This skill covers the tooling layer of RAG evaluation: which framework to adopt, how to structure a golden set, and how to run evaluation automatically on every change so quality regressions are blocked before they ship.*
+- [Retrieval Evaluation Metrics](skills/evaluation-metrics/retrieval-evaluation-metrics/SKILL.md)
+  - *Retrieval evaluation measures whether the pipeline fetched the right chunks before the LLM ever sees them.*
+- [Evaluation Metrics](skills/evaluation-metrics/SKILL.md)
+  - *Use this parent skill when the main RAG problem is measuring quality, detecting regressions, or proving that a change actually helped.*
+
 ### Performance Optimization
 
 - [Optimize Retrieval Latency](skills/performance-optimization/optimize-retrieval-latency/SKILL.md)
   - *Optimizing RAG retrieval latency is critical for production applications where user experience depends on fast response times.*
 - [Performance Optimization](skills/performance-optimization/SKILL.md)
   - *Use this parent skill when the RAG system works functionally but is too slow, expensive, or unstable under expected traffic.*
+
+### Rag Agents
+
+- [Agentic RAG Routing](skills/rag-agents/agentic-rag-routing/SKILL.md)
+  - *Agentic routing puts a decision step in front of retrieval: the agent classifies the query and chooses whether to retrieve, which source or index to hit, and which tool to call.*
+- [Multi-Agent RAG Orchestration](skills/rag-agents/multi-agent-rag-orchestration/SKILL.md)
+  - *Multi-agent orchestration splits a complex question across specialized agents, such as a planner, one or more retrievers, and a synthesizer.*
+- [RAG Agents](skills/rag-agents/SKILL.md)
+  - *Use this parent skill when a single retrieve-then-generate pass is not enough and the system must decide what to retrieve, which tools to call, or how to split work across agents.*
 
 ### Retrieval Strategies
 
@@ -84,6 +111,7 @@ Total Skills: 28
 | Title | Category | Tags |
 |-------|----------|------|
 | [Adaptive Retrieval](skills/retrieval-strategies/adaptive-retrieval/SKILL.md) | retrieval-strategies | adaptive, query-classification, dynamic-strategy (+1) |
+| [Agentic RAG Routing](skills/rag-agents/agentic-rag-routing/SKILL.md) | rag-agents | routing, tool-use, query-classification (+1) |
 | [CRAG - Corrective RAG](skills/retrieval-strategies/crag-corrective-rag/SKILL.md) | retrieval-strategies | crag, corrective, web-search (+2) |
 | [Choosing Vector Database by Data Type](skills/vector-databases/choosing-vector-db-by-datatype/SKILL.md) | vector-databases | selection, text, multimodal (+2) |
 | [Choosing a Chunking Framework](skills/chunking/choosing-a-chunking-framework/SKILL.md) | chunking | framework-selection, chonkie, langchain (+3) |
@@ -91,21 +119,30 @@ Total Skills: 28
 | [Context Enrichment Window](skills/retrieval-strategies/context-enrichment-window/SKILL.md) | retrieval-strategies | context-enrichment, surrounding-context, window (+1) |
 | [Contextual Chunk Headers](skills/chunking/contextual-chunk-headers/SKILL.md) | chunking | contextual-headers, metadata, chunk-enhancement (+1) |
 | [Data Type Handling](skills/data-type-handling/SKILL.md) | data-type-handling | data-types, code, multimodal (+1) |
+| [Deployment](skills/deployment/SKILL.md) | deployment | deployment, production, reindexing (+1) |
+| [Evaluation Metrics](skills/evaluation-metrics/SKILL.md) | evaluation-metrics | evaluation, metrics, ragas (+1) |
 | [Explainable Retrieval with Citations](skills/retrieval-strategies/explainable-retrieval/SKILL.md) | retrieval-strategies | explainability, citations, traceability (+1) |
+| [Generation Evaluation Metrics](skills/evaluation-metrics/generation-evaluation-metrics/SKILL.md) | evaluation-metrics | generation, faithfulness, llm-as-judge (+1) |
 | [Graph RAG - Knowledge Graph Retrieval](skills/retrieval-strategies/graph-rag/SKILL.md) | retrieval-strategies | graph-rag, knowledge-graph, entity-extraction (+1) |
 | [Hierarchical Chunking](skills/chunking/hierarchical-chunking/SKILL.md) | chunking | nested, multi-level, document-structure (+1) |
 | [HyDE - Hypothetical Document Embeddings](skills/retrieval-strategies/hyde-hypothetical-document-embeddings/SKILL.md) | retrieval-strategies | hyde, query-expansion, llm-generation (+1) |
 | [HyPE - Hypothetical Prompt Embeddings](skills/retrieval-strategies/hype-hypothetical-prompt-embeddings/SKILL.md) | retrieval-strategies | hype, precomputed-queries, indexing-time (+1) |
 | [Hybrid Search: BM25 + Dense](skills/retrieval-strategies/hybrid-search-bm25-dense/SKILL.md) | retrieval-strategies | hybrid, bm25, dense (+2) |
+| [Index Versioning and Reindexing](skills/deployment/index-versioning-and-reindexing/SKILL.md) | deployment | reindexing, versioning, embedding-migration (+1) |
+| [Multi-Agent RAG Orchestration](skills/rag-agents/multi-agent-rag-orchestration/SKILL.md) | rag-agents | multi-agent, orchestration, planner (+1) |
 | [Multi-Pass Retrieval with Reranking](skills/retrieval-strategies/multi-pass-retrieval-with-reranking/SKILL.md) | retrieval-strategies | reranking, cross-encoder, two-stage (+1) |
 | [Optimize Retrieval Latency](skills/performance-optimization/optimize-retrieval-latency/SKILL.md) | performance-optimization | latency, performance, caching (+2) |
 | [Performance Optimization](skills/performance-optimization/SKILL.md) | performance-optimization | latency, performance, caching (+1) |
+| [Production RAG Deployment](skills/deployment/production-rag-deployment/SKILL.md) | deployment | serving, scaling, canary (+1) |
 | [Qdrant Setup for RAG](skills/vector-databases/qdrant-setup-rag/SKILL.md) | vector-databases | qdrant, setup, ingestion (+1) |
 | [Qdrant for Production RAG](skills/vector-databases/qdrant-for-production-rag/SKILL.md) | vector-databases | production, scaling, optimization (+1) |
 | [Query Transformation Strategies](skills/retrieval-strategies/query-transformation-strategies/SKILL.md) | retrieval-strategies | query-expansion, step-back, sub-query (+1) |
+| [RAG Agents](skills/rag-agents/SKILL.md) | rag-agents | agents, agentic-rag, orchestration (+1) |
+| [RAG Evaluation Frameworks](skills/evaluation-metrics/rag-evaluation-frameworks/SKILL.md) | evaluation-metrics | ragas, deepeval, trulens (+2) |
 | [RAG for Code Documentation](skills/data-type-handling/rag-for-code-documentation/SKILL.md) | data-type-handling | code, programming, syntax (+2) |
 | [RAG for Multimodal Content](skills/data-type-handling/rag-for-multimodal-content/SKILL.md) | data-type-handling | multimodal, images, text (+2) |
 | [RAPTOR - Hierarchical Abstractive Retrieval](skills/retrieval-strategies/raptor-hierarchical-retrieval/SKILL.md) | retrieval-strategies | raptor, hierarchical, clustering (+2) |
+| [Retrieval Evaluation Metrics](skills/evaluation-metrics/retrieval-evaluation-metrics/SKILL.md) | evaluation-metrics | retrieval, recall, ndcg (+2) |
 | [Retrieval Strategies](skills/retrieval-strategies/SKILL.md) | retrieval-strategies | retrieval, ranking, hybrid-search (+1) |
 | [Self-RAG - Self-Reflective Retrieval](skills/retrieval-strategies/self-rag/SKILL.md) | retrieval-strategies | self-rag, reflection, retrieval-decision (+1) |
 | [Semantic Chunking](skills/chunking/semantic-chunking/SKILL.md) | chunking | semantic, nlp, sentence-boundary (+1) |

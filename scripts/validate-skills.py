@@ -171,6 +171,16 @@ def validate_skill(path: Path) -> list[str]:
 
 def main():
     """Main entry point."""
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Validate RAG skill files.")
+    parser.add_argument(
+        "--strict",
+        action="store_true",
+        help="Treat warnings as errors (non-zero exit if any warning).",
+    )
+    args = parser.parse_args()
+
     skills_dir = Path(__file__).parent.parent / "skills"
     if not skills_dir.exists():
         print(f"error: skills directory not found at {skills_dir}")
@@ -209,7 +219,7 @@ def main():
         for f in files_with_errors:
             print(f"  - {f}")
 
-    if total_errors > 0:
+    if total_errors > 0 or (args.strict and total_warns > 0):
         sys.exit(1)
 
 

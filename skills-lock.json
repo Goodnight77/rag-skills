@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "rag-skills": {
+      "source": "Goodnight77/rag-skills",
+      "sourceType": "github",
+      "computedHash": "9d319dda7c3d1fe0010e63230943f9a6f0be60fe4bbf13979253541752f26cfa"
+    }
+  }
+}

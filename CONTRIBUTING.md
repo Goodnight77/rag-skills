@@ -24,7 +24,21 @@ Thank you for your interest in contributing to rag-skills! This document provide
 
 ### Development Setup
 
+Only Python 3.10+ is required (the scripts use no third-party packages):
+
+```bash
+git clone https://github.com/Goodnight77/Rag-skills.git
+cd Rag-skills
+python --version   # 3.10 or newer
+```
+
 ### Running Validation
+
+```bash
+python scripts/validate-skills.py           # report errors and warnings
+python scripts/validate-skills.py --strict  # treat warnings as errors (used in CI)
+python scripts/generate-index.py            # regenerate INDEX.md and SKILLS.json
+```
 
 ## Submitting New Skills
 
@@ -141,23 +155,36 @@ Use existing category names:
 
 Before submitting, ensure your skill passes validation:
 
-Strict mode treats warnings as errors.
+```bash
+python scripts/validate-skills.py --strict
+```
+
+Strict mode treats warnings as errors, which is what CI enforces on every pull
+request. Run it locally before you submit so warnings do not fail your build.
 
 ### Link Validation
 
-Verify all internal links work and that external implementation links are placed inline in the relevant step or sentence:
+Verify all internal links resolve to real files, and that external implementation
+links are placed inline in the relevant step or sentence rather than in a separate
+`References` block.
 
 ## Credit and Attribution
 
 ### Author Field
 
-Include your name in the `author` field:
+Include your name in the `author` field of the skill frontmatter:
 
-For organizational contributions:
+```yaml
+author: "Your Name"
+```
 
 ### Last Updated
 
-Update the `last_updated` field with the current date:
+Update the `last_updated` field with the current date (YYYY-MM-DD):
+
+```yaml
+last_updated: "2026-05-10"
+```
 
 ### Co-Authors
 
@@ -177,7 +204,15 @@ When reporting issues, include:
 
 #### Bug Report
 
+- What is wrong (broken link, incorrect guidance, validation failure)
+- The skill file or path affected
+- Steps to reproduce and expected vs actual behavior
+
 #### Feature Request
+
+- The RAG problem the new skill or change would solve
+- Which category it belongs to
+- Any reference implementations or prior art
 
 ## Community Guidelines
 

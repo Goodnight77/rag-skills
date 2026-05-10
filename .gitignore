@@ -15,3 +15,9 @@ __pycache__/
 Thumbs.db
 *.swp
 *.swo
+
+# Local scratch / working docs (already excluded from npm package)
+techs.md
+
+# Secrets - never commit (contains npm auth token)
+.npmrc

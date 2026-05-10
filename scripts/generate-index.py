@@ -12,7 +12,6 @@ import re
 import json
 from pathlib import Path
 from typing import Dict, List, Any
-from datetime import datetime
 from dataclasses import dataclass, asdict
 
 @dataclass
@@ -177,7 +176,6 @@ class SkillIndexer:
         index_path = self.root_dir / "INDEX.md"
 
         content = "# RAG Skills Index\n\n"
-        content += f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n"
         content += f"Total Skills: {len(self.skills)}\n\n"
         content += "---\n\n"
 
@@ -208,7 +206,6 @@ class SkillIndexer:
         json_path = self.root_dir / "SKILLS.json"
 
         index_data = {
-            "generated": datetime.now().isoformat(),
             "total_skills": len(self.skills),
             "categories": {k: len(v) for k, v in self.categories.items()},
             "skills": [

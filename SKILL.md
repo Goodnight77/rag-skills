@@ -82,6 +82,29 @@ or operating a Retrieval-Augmented Generation pipeline.
 - `skills/performance-optimization/optimize-retrieval-latency/SKILL.md`: Reduce
   retrieval latency with indexing, caching, and query optimization.
 
+### Evaluation Metrics
+
+- `skills/evaluation-metrics/retrieval-evaluation-metrics/SKILL.md`: Measure retrieval
+  with recall, precision, MRR, nDCG, and context precision and recall.
+- `skills/evaluation-metrics/generation-evaluation-metrics/SKILL.md`: Score answers for
+  faithfulness, answer relevancy, and correctness with LLM-as-judge.
+- `skills/evaluation-metrics/rag-evaluation-frameworks/SKILL.md`: Choose an evaluation
+  framework and wire it into a CI regression gate.
+
+### RAG Agents
+
+- `skills/rag-agents/agentic-rag-routing/SKILL.md`: Route each query to the right
+  retrieval strategy, source, or tool.
+- `skills/rag-agents/multi-agent-rag-orchestration/SKILL.md`: Coordinate planner and
+  specialist agents to decompose and synthesize complex answers.
+
+### Deployment
+
+- `skills/deployment/production-rag-deployment/SKILL.md`: Serve, scale, and roll out a
+  RAG pipeline safely.
+- `skills/deployment/index-versioning-and-reindexing/SKILL.md`: Version the index and
+  reindex or migrate embeddings without downtime.
+
 ## Success Criteria
 
 - The selected RAG pattern matches the user's actual bottleneck.
